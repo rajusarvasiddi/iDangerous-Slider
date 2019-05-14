@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./dist/css/swiper.min.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <img src="./assets/images/image-1465348_960_720.jpg" height="80%" width="80%" alt="">
+                                </li>
+                                <li class="list-group-item tag" style="display: none;">001122, lorem ipsum, 2050</li>
+                                <li class="list-group-item font-weight-bold">
+                                    Pellentesque facilisis, magna id pretium rutrum
+                                </li>
+                                <li class="list-group-item tag" style="display: none;">
+                                    <button class="btn btn-primary">Start</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            Slide 1
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex row">
+                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="80%" width="80%" alt="">
+                            </div>
+                            <div class="tag" style="display: none;">
+                                <h4>It is a tag..</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <!-- Demo styles -->
+  <style>
+    /* html, body {
+      position: relative;
+      height: 100%;
+    } */
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      /* margin: 0;
+      padding: 0; */
+    }
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+    }
+    .swiper-slide.swiper-slide-active {
+        background: #eee;
+        padding: 0 !important;
+        transition: opacity 5s ease;
+    }
+    .swiper-slide.swiper-slide-active .tag {
+        color: blue;
+        display: block !important;
+        translate: scale(3.0);
+        background: yellow;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      padding: 80px;
+    }
+  </style>
+
+  <!-- Swiper JS -->
+  <script src="./dist/js/swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        breakpointsInverse: true,
+        breakpoints: {
+        // when window width is <= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        // when window width is <= 480px
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is <= 640px
+        640: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+    });
+  </script>
+</body>
+</html>
