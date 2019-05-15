@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./dist/css/swiper.min.css">
-
+    <style>
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+            right: 390px;
+        }
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+            left: 390px;
+        }
+    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -18,31 +25,78 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <ul class="list-group">
-                                <li class="list-group-item">
-                                    <img src="./assets/images/image-1465348_960_720.jpg" height="80%" width="80%" alt="">
+                                <li class="list-group-item p-0 m-0 border-0">
+                                    <img src="./assets/images/kisspng-car-rental-luxury-vehicle-maserati-grancabrio-maserati-transparent-background-5a77cfd598b0c6.0914929515178014296254.jpg" height="80%" width="80%" alt="">
                                 </li>
-                                <li class="list-group-item tag" style="display: none;">001122, lorem ipsum, 2050</li>
-                                <li class="list-group-item font-weight-bold">
+                                <li class="list-group-item border-0 font-weight-bold">
                                     Pellentesque facilisis, magna id pretium rutrum
                                 </li>
-                                <li class="list-group-item tag" style="display: none;">
-                                    <button class="btn btn-primary">Start</button>
+                                <li class="list-group-item border-0 tag" style="display: none;">001122, lorem ipsum, 2050</li>
+                                <li class="list-group-item border-0 tag" style="display: none;">
+                                    <button class="btn btn-primary">Explore</button>
                                 </li>
                             </ul>
                         </div>
                         <div class="swiper-slide">
-                            Slide 1
+                            <ul class="list-group list-group-item p-0 m-0 border-0">
+                                <li class="list-group-item border-0">
+                                    <img src="./assets/images/better-software-2.jpg" height="80%" width="80%" alt="">
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">001122, lorem ipsum, 2050</li>
+                                <li class="list-group-item border-0 font-weight-bold">
+                                    Pellentesque facilisis, magna id pretium rutrum
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">
+                                    <button class="btn btn-primary">Explore</button>
+                                </li>
+                            </ul>
                         </div>
                         <div class="swiper-slide">
-                            <div class="d-flex row">
-                                <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="80%" width="80%" alt="">
-                            </div>
-                            <div class="tag" style="display: none;">
-                                <h4>It is a tag..</h4>
-                            </div>
+                            <ul class="list-group list-group-item p-0 m-0 border-0">
+                                <li class="list-group-item border-0">
+                                    <img src="./assets/images/image-1465348_960_720.jpg" height="80%" width="80%" alt="">
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">001122, lorem ipsum, 2050</li>
+                                <li class="list-group-item border-0 font-weight-bold">
+                                    Pellentesque facilisis, magna id pretium rutrum
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">
+                                    <button class="btn btn-primary">Explore</button>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">
+                            <ul class="list-group list-group-item p-0 m-0 border-0">
+                                <li class="list-group-item border-0">
+                                    <img src="./assets/images/pexels-photo.jpg" height="80%" width="80%" alt="">
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">001122, lorem ipsum, 2050</li>
+                                <li class="list-group-item border-0 font-weight-bold">
+                                    Pellentesque facilisis, magna id pretium rutrum
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">
+                                    <button class="btn btn-primary">Explore</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="list-group list-group-item p-0 m-0 border-0">
+                                <li class="list-group-item border-0">
+                                    <img src="./assets/images/xl-2016-software-development-1.jpg    " height="80%" width="80%" alt="">
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">001122, lorem ipsum, 2050</li>
+                                <li class="list-group-item border-0 font-weight-bold">
+                                    Pellentesque facilisis, magna id pretium rutrum
+                                </li>
+                                <li class="list-group-item border-0 tag" style="display: none;">
+                                    <button class="btn btn-primary">Explore</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>
@@ -56,17 +110,15 @@
       position: relative;
       height: 100%;
     } */
-    body {
-      background: #eee;
+    /* body {
+      background: #ffffff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color:#000;
-      /* margin: 0;
-      padding: 0; */
-    }
+    } */
     .swiper-container {
       width: 100%;
-      height: 300px;
+      /* height: 300px; */
     }
     .swiper-slide.swiper-slide-active {
         background: #eee;
@@ -74,10 +126,8 @@
         transition: opacity 5s ease;
     }
     .swiper-slide.swiper-slide-active .tag {
-        color: blue;
         display: block !important;
         translate: scale(3.0);
-        background: yellow;
     }
     .swiper-slide {
       text-align: center;
@@ -108,6 +158,10 @@
         slidesPerView: 3,
         spaceBetween: 30,
         centeredSlides: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         breakpointsInverse: true,
         breakpoints: {
         // when window width is <= 320px
